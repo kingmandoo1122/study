@@ -1,0 +1,15 @@
+.button{
+    border:1px solid black;
+    display: inline-block;
+    padding:5px 24px;
+    cursor: pointer;
+
+
+}
+.circle{
+    width: 200px;
+    height:200px;
+    background:red;
+    margin:0 auto;
+    transition: all 3s ease 0s
+}

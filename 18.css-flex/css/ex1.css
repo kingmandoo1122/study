@@ -1,0 +1,38 @@
+/* 
+각각 div사이 여백 10px
+div태그의 높이는 300px
+배경색은 pink
+*/
+
+
+/* 
+flex-warp : warp으로 지정할 시 
+자식 flex-item 들은 width값을 지정해야 함
+ -- 줄바꿈이 되었기 때문에 width 사이즈에 엄격하다 --
+*/
+.box{
+    background: orange;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding:10px;
+}
+
+.box div{
+    width:calc((100% - 10px)/2);
+    height: 300px;
+    background: pink;
+    margin-bottom:10px ;
+    margin-right: 10px;
+}
+
+.box>div:nth-of-type(2n){
+    margin-right: 0;
+}
+.box>div:last-of-type{
+    margin-bottom: 0;
+}
+.box>div:nth-last-of-type(2){
+    margin-bottom: 0;
+}

@@ -1,0 +1,42 @@
+*{margin:0;padding:0}
+
+.box1{
+    border:1px solid red;
+    width: 50vw;
+    height:50vw;
+    max-height: 600px;
+    min-height: 300px;
+    /* 화면 너비의 50%만큼 선택한 태그의 너비높이를 지정함. 그렇기 때문에 화면 너비를 줄이거나 늘리면 그에 따라 같이 태그의 너비가 늘어나거나 줄어든다. */
+
+    /* 
+    최소 높이를 300px로 제한
+    최대 높이를 600px로 제한
+    */
+}
+
+.box2{
+    border:1px solid black;
+    width: 50vh;
+    height: 50vh;
+    min-width: 300px;
+    max-width: 400px;
+    /* 화면 높이의 50%만큼 선택한 태그의 너비높이를 지정함. 그렇기 때문에 화면 높이를 줄이거나 늘리면 그에 따라 같이 태그의 너비가 늘어나거나 줄어든다. */
+
+    /* 
+    최소 너비를 300px로 제한
+    최대 너비를 400px로 제한    
+    */
+}
+
+.box3{
+    border: 1px solid black;
+    width: 1400px;
+    height:500px;
+    background:#888;
+}
+
+.innerbox3{
+    border:1px solid lime;
+    width: 50%; /* 700px */
+    height: 50%;  /* 250px */
+}

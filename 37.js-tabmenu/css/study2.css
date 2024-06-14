@@ -1,0 +1,26 @@
+*{margin:0;padding:0}
+ul{list-style: none;}
+
+.tabmenu{
+    width: 500px;
+    border:1px solid black;
+    margin:0 auto;
+}
+
+.tab_title{
+    border:1px solid red;
+    display: flex;
+}
+.tab_title>li{
+    border:1px solid blue;
+    padding:6px 20px;
+    cursor: pointer;
+}
+.tab_title>li.on{
+    color:white;
+    background: blue;
+}
+.tab_description{
+    padding:10px;
+    min-height: 150px;
+}

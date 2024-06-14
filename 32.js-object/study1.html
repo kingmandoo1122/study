@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체데이터형태</title>
+</head>
+<body>
+    <h1>객체 - object</h1>
+    <p>자바스크립트에서 사물을 나타낼 때 사용하는 표현</p>
+    <p>객체는 ,(콤마)를 사용하여 프로퍼티를 입력할 수 있다.</p>
+    <p>그리고 각각의 프로퍼티는 ;(콜론)을 사용하여 key:value 형태로 구성되어있다</p>
+    <p>여기서 key값을 사용하여 지정된 value의 값을 가져올 수 있다. key값은 객체안에 속해있는 변수처럼 활용된다.</p>
+
+    <script>
+        let person1 = ["정현진",43,"남자",false,["사과","배","딸기"]]
+        person1[0]
+        person1[1]
+        person1[2]
+        person1[3]
+        person1[4]
+
+        let person2 ={name:"정현진",age:43,gender:"남자",marry:false,fruit:["사과","배","딸기"]}
+        person2.name //"정현진"
+        person2["name"] // "정현진"
+        person2.age //43
+        person2["age"] //43
+        person2.gender //"남자"
+        person2["gender"] //"남자"
+        person2.marry // false
+        person2["marry"] //false
+        person2.fruit // ["사과","배","딸기"]
+        person2["fruit"] // ["사과","배","딸기"]
+        person2.fruit[1] //"배"
+        person2["fruit"][1] //"배"
+    </script>
+
+    <script src="./js/class8th2.js"></script>
+</body>
+</html>

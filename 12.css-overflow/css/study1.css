@@ -1,0 +1,54 @@
+.box{
+    border:1px solid black;
+    width:100px;
+    height:100px;
+
+}
+
+.hidden{
+    overflow: hidden;
+}
+.scroll{
+    overflow: scroll;
+}
+/* 컨텐츠의 양과 관계없이 언제나 스크롤바가 노출된다. */
+.auto{
+    overflow: auto;
+}
+/* scroll값과 다르게 안의 컨텐츠양을 자동으로 파악해서 넘어갈거 같으면 스크롤바가 나온다. */
+
+.over_y{
+    overflow-y: scroll;
+    white-space:nowrap;
+}
+
+/* scroll/auto 선택가능 */
+.over_x{
+    overflow-x: scroll;
+}
+
+.over_text{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 말줄임표 -> ... */
+}
+
+.visible{
+    overflow: visible;
+}
+/* 기본값 */
+
+h1{
+    font-size:5rem;
+    text-shadow: 10px 10px 10px red,
+    -10px -10px 10px blue,
+    20px 20px 10px orange;
+    transition: all 0.5s ease 0s;
+}
+h1:hover{
+    text-shadow:none;
+
+
+}
+/* x축좌표 y축좌표 그림자확산정도 그림자 색상 순으로 축약형으로 입력할 수 있으며 콤마를 통해 그림자를 여러개를 입력할 수 있다. */

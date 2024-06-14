@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>너비높이의 최소값 최대값</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>최소값 최대값 설정하기</h1>
+    <hr class="resetline">
+    <h2>단위</h2>
+    <p>css에서는 여러 단위를 사용할 수 있다.</p>
+    <ul>
+        <li>px : 화면 입자에 대한 기본단위(절대단위)</li>
+        <li>% : 부모태그 또는 기준태그에 대한 상대단위</li>
+        <li>vw(viewport width): 브라우저 화면 너비에 대한 비율단위</li>
+        <li>vh(viewport height) : 브라우저 화면 높이에 대한 비율단위</li>
+    </ul>
+    <div class="box1">
+        화면 너비의 50%만큼 선택한 태그의 너비높이를 지정함. 그렇기 때문에 화면 너비를 줄이거나 늘리면 그에 따라 같이 태그의 너비가 늘어나거나 줄어든다.
+    </div>
+    <div class="box2">
+        화면 높이의 50%만큼 선택한 태그의 너비높이를 지정함. 그렇기 때문에 화면 높이를 줄이거나 늘리면 그에 따라 같이 태그의 너비가 늘어나거나 줄어든다.
+    </div>
+    <div class="box3">
+        <div class="innerbox3">
+            부모태그에 높이가 명시적으로 지정되어있다면 자식태그에 높이를 지정할 때 %단위를 사용하여 높이를 조절 할 수 있다. 하지만 높이가 지정되어있지 않고 기본값 auto상태에 있다면 자식태그는 auto에 대한 %를 계산할 수 있다. 즉 높이가 지정되지 않는다.
+        </div>
+    </div>
+</body>
+</html>

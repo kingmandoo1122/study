@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.box{
+    box-sizing: content-box;
+    border:10px solid orange;
+    margin-bottom: 100px;
+    margin-top:100px;
+    width: 600px;
+    padding-left:50px;
+    padding-right:50px;
+}
+.box+p{
+    box-sizing: border-box;
+    border:10px solid red;
+    width:600px;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.quizbox{
+    box-sizing:border-box;
+    padding-left:50px;
+    width:800px;
+    border:1px solid black;
+
+}
+
+.quizbox section{
+    border:2px solid red;
+    padding-right :40px;
+
+}
+/* 섹션태그의 컨텐츠박스의 너비는 몇px? */
+
+
+
+.boxing{
+    box-sizing: border-box;
+}
+
+.boxing section{
+    box-sizing:border-box;
+    margin-left:30px;
+    padding-right:50px;
+    border: 10px solid black;
+    width:500px
+}

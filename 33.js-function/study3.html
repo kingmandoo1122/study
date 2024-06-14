@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수사용시 주의할점</title>
+</head>
+<body>
+    <script>
+        // alert(a)
+        let a = 10
+        //변수를 선언하지 않았는데 변수를 부르는 행위 주의해야 함.
+        function box(){
+            let b = 20 //내부변수, b라는 변수는 box함수 안에서 선언된 내부변수이기 때문에 밖에서는 접근할 수 없다.
+        }
+        box()
+        // alert(b)
+
+        let c = 20
+        function box2(){
+            c = 40  
+        }
+        //변수를 접근할 때는 안에서 밖으로는 접근할 수 있으나, 밖에서 안으로는 접근할 수 없다.
+        box2()
+        alert(c)
+    </script>
+</body>
+</html>

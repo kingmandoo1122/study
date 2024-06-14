@@ -1,0 +1,47 @@
+*{
+    margin:0;padding:0;
+}
+h1,h2,h3,h4,h5,h6,b,strong{
+    font-weight: inherit;
+    font-size:inherit
+}
+ul,ol,dl{
+    list-style: none;
+}
+
+@font-face {
+    font-family: "PulmuoneLOHASBold";
+    src: url("../font/PulmuoneLOHASBold.woff");
+}
+
+html{
+    font-size:20px;
+}
+
+body{
+    font-family: "Noto Sans KR";
+}
+section>h1,.final{
+    font-family: "PulmuoneLOHASBold";
+    font-size:1.1rem;
+}
+.mid{
+    padding-top:40px;
+}
+.wrap{
+    margin: 0 auto;
+    width: 980px;
+}
+
+h1,p,ol{
+    margin-bottom: 20px;;
+}
+
+.final{
+    font-size:1.5rem;
+    margin-top:60px;
+}
+
+.final img{
+    vertical-align: middle;
+}

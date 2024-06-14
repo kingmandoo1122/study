@@ -1,0 +1,142 @@
+/* common style */
+html{
+    font-size: 12px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* layout 대략 -> 세밀 , 큰영역 -> 작은영역(사이즈,배치) */
+
+.wrap{
+    width: 920px;
+    margin:0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav{
+    width: 530px;
+}
+
+.lnb{
+    box-sizing: border-box;
+    display: flex;
+    width: 205px;
+    background: #4c4c4c;
+    color: white;
+    font-size:10px;
+    margin-left: auto;
+    text-transform: uppercase;
+    padding:2px 18px;
+    border-radius: 0 0 6px 6px;
+    margin-bottom: 32px;
+
+}
+.lnb>li{
+    border-right:1px solid white;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.lnb>li:last-of-type{
+    border-right:none;
+}
+.gnb{
+    display: flex;
+}
+
+.gnb>li{
+    font-size:15px;
+    font-weight:600;
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+.contents{
+    display: flex;
+}
+
+.contents>section{
+    flex:1;
+    margin-right: 28px;
+}
+
+.contents>section:last-of-type{
+    margin-right: 0;
+}
+
+.contents>section>h2{
+    border-bottom:1px solid #868686;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1px;
+}
+
+footer{
+    margin-top: 30px;
+    background: #f0f0f0;
+}
+
+.notice_list>li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    background:url("../img/icon_dot.gif") no-repeat 4px 50% ;
+    padding-left: 10px;
+}
+
+.notice_list>li:last-of-type{
+    margin-bottom: 0;
+}
+
+.quick_menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner_content{
+    margin: 0 auto;
+    width: 920px;
+    display: flex;
+    align-items: center;
+    color: #868686;
+}
+
+footer{
+    padding:24px 0;
+}
+
+.f_logo{
+    margin-right: 48px;
+}
+
+.f_menu{
+    display: flex;
+    margin-bottom:10px;
+}
+
+.f_menu>li{
+    border-right: 1px solid #868686;
+    padding: 0 12px;
+    font-weight: bold;
+}
+
+.f_menu>li:last-of-type{
+    border-right: none;;
+}
+.f_menu>li:nth-of-type(1){
+    color:#457a88;
+    padding-left:0;
+}
+
+.info>p{
+    text-transform: uppercase;
+}
+
+.gnb>li:hover{
+    color:#32878c;
+}

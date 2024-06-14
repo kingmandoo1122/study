@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수/상수</title>
+</head>
+<body>
+    <h1>상수</h1>
+    <p>상수는 변하지 않는 데이터</p>
+
+    <script>
+        let team_name = "일석삼조팀"
+        team_name = "삼조일석팀"
+        let teammate1 = "이채원"
+        let teammate2 = "김한결"
+        let teammate3 = "김경민"
+        let captin = teammate3
+        alert(captin)
+    </script>
+    <h1>변수</h1>
+    <p>변수는 변하는 데이터</p>
+    <p>데이터가 저장되는 조그마한 메모리공간</p>
+    <p>변수에는 모든 데이터 형태가 저장될 수 있다.</p>
+    <ol>
+        <li>변수를 생성(선언)</li>
+        <li>생성된 변수에 값을 대입(변수에 최초로 값을 대입하는 것을 특별히 초기화하는 과정이라고 말한다.)
+        </li>
+    </ol>
+    <h2>변수의 효용</h2>
+    <p>변수를 만들어 놓으면 중복해서 사용하기 쉽다</p>
+    <script>
+        let a;
+        a = 10;
+        let b;
+        b = 20;
+
+        console.log(a+b)
+
+        let c
+        c="정현진"
+        let d
+        d="한지현"
+        let e = "송지현"
+        console.log(c+e+d)
+
+        let num1 = 400
+        let num2 = 5
+
+        num1+20*num2
+        num1+num1*num2
+        num1*num2
+
+
+        100
+        "안녕"
+        "바나나"
+
+        let name = "정현진"
+        let scoreKo = 90
+        let scoreEn = 100
+        let scoreMath = 99
+        let scoreSum = scoreKo+scoreEn+scoreMath
+        let scoreAver = Math.round((scoreSum/3)*100)/100
+        console.log(scoreAver)
+        
+        // document.write('<div class="grade">')
+        // document.write("<h2>"+name+"님의 성적표</h2>")
+        // document.write("<p>국어성적 : "+scoreKo+"점</p>")
+        // document.write("<p>영어성적 : "+scoreEn+"점</p>")
+        // document.write("<p>수학성적 : "+scoreMath+"점</p>")
+        // document.write("<p>종합점수 : "+scoreSum+"점</p>")
+        // document.write("<p>평균점수 : "+Math.round(scoreAver*100)/100+"점</p>")
+        // document.write("</div>")
+
+        // document.write(`
+        // <div class="grade">
+        //     <h2>`+name+`님의 성적표</h2>
+        //     <p>국어성적 : `+scoreKo+`점</p>
+        //     <p>영어성적 : `+scoreEn+`점</p>
+        //     <p>수학성적 : `+scoreMath+`점</p>
+        //     <p>총합점수 : `+scoreSum+`점</p>
+        //     <p>평균점수 : `+Math.round(scoreAver*100)/100+`점</p>
+        // </div>
+        // `)
+
+        document.write(`
+        <div class="grade">
+        <h2>${name}님의 성적표</h2>
+        <p>국어성적 : ${scoreKo}점</p>
+        <p>영어성적 : ${scoreEn}점</p>
+        <p>수학성적 : ${scoreMath}점</p>
+        <p>총합점수 : ${scoreSum}점</p>
+        <p>평균점수 : ${scoreAver}점</p>
+    </div>`)
+    </script>
+
+    <div class="grade">
+        <h2>정현진님의 성적표</h2>
+        <p>국어성적 : 90점</p>
+        <p>영어성적 : 100점</p>
+        <p>수학성적 : 99점</p>
+        <p>총합점수 : 289점</p>
+        <p>평균점수 : 96.33점</p>
+    </div>
+</body>
+</html>

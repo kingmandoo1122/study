@@ -1,0 +1,44 @@
+/* reset */
+*{margin:0;padding:0;}
+a{color:inherit;text-decoration: none;}
+strong,b,h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}
+i,em,address{font-style:inherit}
+ul,ol{list-style: none;}
+
+/* common */
+
+html{
+    font-size:20px;
+    font-family: "Noto Sans KR", sans-serif;
+    /* "Noto Sans KR" 등록된 폰트명으로 적용한다. 그런데 만약 이 등록명으로 폰트가 등록되어 있지 않다면 획이 없는 고딕체 계열로 적용한다. */
+}
+
+@font-face {
+    font-family: "풀무원";
+    src: url("../font/PulmuoneLOHASBold.woff");
+}
+
+/* 대략적인 layout */
+.wrap{
+    border:1px solid red;
+    width:980px;
+    margin:0 auto;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.pul{
+    font-family: "풀무원";
+    margin-bottom:40px;
+}
+
+.wrap p{
+    margin-bottom:40px;
+}
+.mt100{
+    margin-top: 100px;
+}
+
+.pul img{
+    vertical-align: middle;
+}

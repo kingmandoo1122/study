@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+}
+.box{
+    border:10px solid lime;
+    height:600px;
+    background-color: orange;
+    background-image: url("../image/코알라.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    /* background-position:-200px -100px ; */
+    /* background-position: 100% 100%; */
+    /* background-position: right bottom; */
+    /* background-position: 2rem 2rem */
+    /* background-position:calc(100% - 100px) 100px; */
+    /* calc()도구를 사용할 때에는 부호를 쓸 수 있는 데 부호의 앞 뒤 공간은 반드시 띄어쓰기를 할 것. 안하면 계산이 안되고 에러가 납니다.
+    (+,-,*,/)다 가능 */
+    /* background-size: 400px auto; */
+    /* 가로사이즈를 400픽셀 세로사이즈는 비율에 맞게 자동으로 조절 */
+    /* background-size: 100% auto; */
+    /* 가로사이즈를 태그의 너비 100%만큼으로 하고 세로사이즈는 이미지의 원본 비율에 맞게 자동으로 조절 */
+    /* background-size : auto 100%; */
+    /* 세로사이즈를 태그의 높이 100%만큼으로 하고 가로사이즈는 이미지의 비율에 맞게 자동으로 조절 */
+
+    /* background-size:cover;
+    배경이미지의 크기를 태그의 공간을 가득채울만큼으로 자동조절 - 배경이미지가 잘려나가는 부분이 있음. */
+    /* background-size: contain; */
+    /* 배경이미지가 잘리지않는 선에서 가능한 최대크기의 사이즈로 조절함. */
+    background : orange url("../image/코알라.jpg") no-repeat 0 0 / cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+
+}
+
+.gradi_box1{
+    border: 10px solid green;
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(-204deg, red 27%, blue 37%, green 82%);
+}
+
+.gradi_box2{
+    border: 10px solid pink;
+    width: 501px;
+    height: 435px;
+    background-image: radial-gradient(#A4C3DA -35%, #a9cfc5, #667d8f);
+}

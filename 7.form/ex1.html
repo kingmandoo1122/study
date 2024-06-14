@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #user_email,#user_confirm_email,#user_Country{height: 30px; width: 400px;}
+    </style>
+
+
+</head>
+<body>
+    <form action="#">
+        <fieldset style="border: none;">
+            <legend style="font-size: 30px;">CREATE YOUR ACCOUNT</legend>
+            
+            <label for="user_email">Email Address</label><br>
+            <input type="email" id="user_email" required>
+            <br><br>
+            <label for="user_confirm_email">Confirm your Address</label><br>
+            <input type="email" id="user_confirm_email" required>
+            <br><br>
+            <label for="user_Country">Country of Residence</label><br>
+            <select id="user_Country" required>
+                <option selected>Korea, Republic of</option>
+                <option>China</option>
+                <option>Japan</option>
+                <option>USA</option>
+                <option>UK</option>
+            </select>
+
+            <br><br><br><br><br>
+
+            <input type="checkbox" id="agreement" required>
+            <label for="agreement">I am 13 years of age or older and agree to the terms of the <b>Steam Subscriber Agreement</b> and the <b>Valve Privacy Policy</b>.</label>
+
+            <br><br><br>
+            <input style="width: 200px;height: 40px; border: none; background-color: rgba(149, 195, 248, 0.637);" type="submit" value="Continue">
+
+        </fieldset>
+
+
+
+    </form>
+</body>
+</html>

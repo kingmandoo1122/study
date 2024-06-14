@@ -1,0 +1,22 @@
+body{
+    border:1px solid black
+}
+p{
+    border:1px solid red;
+    height: 200px;
+
+}
+h1{
+    border:1px solid blue;
+    width:400px;
+    height: 400px;
+}
+b{
+    border:1px solid green;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+html{
+    border: 10px solid pink;
+}

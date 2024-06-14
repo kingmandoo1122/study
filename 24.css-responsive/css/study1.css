@@ -1,0 +1,31 @@
+@media (min-width:1201px){
+    /* 화면너비가 최소 1024픽셀 이상일 때 적용되는 스타일코드 */
+    .wrap{
+        background: purple;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1200px){
+    /* 화면너비가 최소 1024픽셀 이상일 때 적용되는 스타일코드 */
+    .wrap{
+        background: red;
+    }
+}
+
+
+
+@media (min-width:768px) and (max-width:1023px) {
+    /* 화면너비가 최소 768픽셀보다 크고 최대 1023픽셀보다 작을 때 적용되는 스타일코드 */
+    .wrap{
+        background: blue;
+    }
+}
+/* 태블릿 */
+
+
+
+@media (max-width : 767px){
+    .wrap{
+        background: green;
+    }
+}

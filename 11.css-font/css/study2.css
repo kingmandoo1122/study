@@ -1,0 +1,35 @@
+@font-face{
+    font-family: "내가등록한내폰트";
+    src:url("../font/KCC-Hanbit.ttf");
+}
+@font-face {
+    font-family: "폰트2";
+    src: url("../font/감탄로드바탕체\ Regular.ttf");
+}
+/*지금부터 폰트를 등록하겠다 등록할 폰트정보는 중괄호 안에있다.*/
+/* 순수하게 영문자로만 등록명을 작성하면 쌍따옴표나 홑따옴표 쓸 필요없다. */
+/* 등록할 때 등록명에 특수문자 혹은 한글이 들어가면 앞뒤로 쌍따옴표 혹은 홑따옴표를 넣을 것 */
+/*  */
+
+.f_hb,.f_hb~p{
+    font-family: "내가등록한내폰트";
+}
+
+
+.f_gt, .f_gt~p{
+    font-family: "폰트2";
+}
+
+.f20{
+    font-size: 20px;
+}
+.f30{
+    font-size: 30px
+}
+.f50{
+    font-size:50px;
+}
+
+.f20.f30{
+    font-size:50px
+}

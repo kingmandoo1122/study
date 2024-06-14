@@ -1,0 +1,25 @@
+table{border-collapse: collapse;
+    text-align: right;
+width: 100px;
+}
+
+.a{
+    color: gold;
+
+}
+.b{
+    color:blue;
+}
+.c{
+    color:blueviolet
+}
+.d{
+    color:aqua
+}
+.e{
+    color:gray
+}
+.f{
+    color:red;
+}
+

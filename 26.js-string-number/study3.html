@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표준 함수(도구) 모음</title>
+</head>
+<body>
+    <h1>alert()</h1>
+    <p>알림창을 띄우는 함수 - 괄호안에는 알림창에 보여질 데이터를 입력</p>
+    <h1>console.log()</h1>
+    <p>콘솔창에 로그를 띄우는 함수 - 괄호안에는 콘솔창에 보여질 데이터를 입력</p>
+    <h1>document.write()</h1>
+    <p>body태그에 컨텐츠를 필기하는 함수 - 괄호안에는 필기할 데이터를 입력</p>
+    <h1>Number()</h1>
+    <p>괄호안에 숫자처럼 생긴 문자데이터를 숫자로 변형하여 함수가 사용된 자리에 변형된 결과값을 남기는 함수</p> 
+    <h1>typeof()</h1>
+    <p>괄호안에 데이터의 형태를 검사하고 검사한 결과값(문자데이터형태)을 함수가 사용된 자리에 남기는 함수</p>
+
+    <script>
+        // 계산방법을 필히 익혀둘 것
+        // 계산은 안쪽 함수(도구)부터 진행된다.
+        console.log(typeof("점심시간"))
+        console.log(typeof(123))
+        console.log(typeof(typeof(123)))
+    </script>
+
+    <h1>prompt()</h1>
+    <p>홈페이지 사용자에게 괄호안의 질문을 한 후 사용자가 입력한 대답을 함수가 사용되었던 자리에 문자데이터 형태로 남겨주는 함수</p>
+
+    <script>
+        // document.write("<h2>"+prompt("당신의 이름은 무엇입니까?")+"님 환영합니다.</h2>")
+        //사용자에게 나이를 물어보고 [아! 20살 이시군요!] 라고 p태그에 필기할 수 있게 소스코드 작성
+    //    document.write("<p>아! "+prompt("당신의 나이는 몇 살인가요?")+"살 이시군요!</p>")
+    </script>
+
+    <h1>수학계산관련 함수</h1>
+    <p>모두 결과를 계산해서 함수가 사용되었더 자리에 결과값을 남긴다.</p>
+
+    <script>
+        console.log(Math.ceil(5.05))  //올림함수
+        console.log(Math.floor(4.9)) // 버림함수
+        console.log(Math.round(3.2)) // 반올림함수 
+        console.log(Math.pow(10,3)) // 제곱함수
+        console.log(Math.sqrt(100))   // 루트함수(양의 제곱근만)
+        console.log(Math.abs(-233)) // 절대값을 구하는 함수
+        console.log(Math.max(2,-10,20,-45,100)) // 가장 큰 값
+        console.log(Math.min(10,-23,231,-7622,0)) // 가장 작은 값
+        console.log(Math.random()) //0<x<1 의 랜덤한 소수를 생성하는 수 
+        console.log(Math.ceil(Math.random()*4))  //1~4의 랜덤한 자연수를 생성하는 수
+    </script>
+</body> 
+</html>

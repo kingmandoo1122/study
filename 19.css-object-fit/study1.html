@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-fit</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>object-fit</h1>
+    <p>object-fit 속성을 사용하여 img태그나 video태그의 두종류의 태그에 대해 원본 가로세로 비율을 해치지 않는 범위안에서 사이즈를 조절할 수 있다.</p>
+
+    <h2>원본비율을 해치는 경우</h2>
+    <p>가로와 세로 둘 중 한개만 수정하지 않고 가로 세로 둘다 사이즈를 변경한다면 원본비율을 해칠수 있다.(해치지마라)</p>
+    <img class="img1" src="./img/cat.jpg" alt="고양이사진">
+    <p>원본사이즈 가로 640픽셀 세로 427픽셀</p>
+
+    <h2>원본비율을 유지</h2>
+    <p>원본비율을 유지하면서 태그의 가로세로 사이즈를 조절</p>
+    <h3>contain</h3>
+    <p>이미지나 영상의 크기를 조절할 때 절대 짤리지 않는 선에서 크기를 최대한 맞추는 방식</p>
+    <img class="img2" src="./img/cat.jpg" alt="고양이사진">
+    <h3>cover</h3>
+    <p>이미지 영상의 크기가 잘리더라도 지정한 가로와 세로사이즈를 무조건 가득 채우는 방식</p>
+    <img class="img3" src="./img/cat.jpg" alt="고양이사진">
+</body>
+</html>

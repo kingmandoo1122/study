@@ -1,0 +1,56 @@
+html{
+    font-size:14px;
+}
+body{
+    font-family: "Noto Sans KR", sans-serif;
+}
+.games{
+    width:400px;
+    padding: 24px 19px 20px 15px;
+    box-sizing: border-box;
+}
+
+
+
+body h2,h3{
+    font-weight: bold;
+}
+
+.games>h2{
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom:34px;
+}
+
+.games ul>li{
+    margin-bottom:20px;
+    background: #f8fbfe;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.games ul>li:last-of-type{
+    margin-bottom: 0;
+}
+
+.games ul li a{
+    display: flex;
+    align-items: center;
+}
+
+.games ul>li>a>img{
+    flex:1
+}
+.game_info{
+    padding-left:30px;
+    flex:1
+}
+
+
+.game_info p{
+    color: #27272775;
+    margin-top:10px;
+}
+
+/* .game_info h3{
+    line-height: 170%;
+} */

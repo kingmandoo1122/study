@@ -1,0 +1,44 @@
+*{margin:0;padding:0;}
+b,strong,h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
+a{color: inherit;text-decoration: none;}
+
+html{
+    font-size:14px;
+}
+
+body{background-color: ivory;}
+
+.wrap{
+    width: 900px;
+    margin : 0 auto;
+    background : url("../image/꿈은이루어진다.jpg") no-repeat 100% 100%;
+}
+
+.wrap h1{
+    background-color: green;
+    color:white;
+    text-align:center;
+    font-size:3.4rem;
+    font-weight: bold;
+    padding:12px 0px;
+    border-top:2px solid red;
+    border-bottom : 2px solid red;
+    margin-bottom:10px;
+}
+
+.wrap > h2{
+    background-color: orange;
+    font-weight: bold;
+    font-size:2.14rem;
+    border-bottom:2px solid red;
+    margin-bottom:10px;
+}
+
+.wrap p{
+    margin:10px 0;
+}
+p.copy{
+    border-top :1px solid red;
+    padding-top:10px;
+    font-weight: bold;
+}

@@ -1,0 +1,43 @@
+h1:hover{
+/* 마우스를 올린 h1태그를 선택한다 */
+    background:orange;
+    color:aqua;
+}
+h1:active{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+
+a:link{
+    font-size:5rem
+}
+
+/* href속성이 명시되어 있는 경우 */
+a:visited{
+    color:orange;
+    text-decoration: line-through;
+}
+
+/* 방문한적이 있는 링크 스타일 */
+
+.list:before{
+    /* 클래스가 list인 태그들의 첫 번째 자식태그를 가상으로 만든다. */
+    /* 가상before태그를 만든다 */
+    /* 기본 display:inline */
+    content: "첫째자식 가상태그 before";
+    border:1px solid red;
+}
+
+.list:after{
+    /* 클래스가 list인 태그들의 마지막 자식태그를 가상으로 만든다. */
+    /* 가상after태그를 만든다 */
+    /* 기본 display inline */
+    content: "마지막자식 가상태그 after";
+    border:1px solid red
+}
+
+.list li{
+    border:1px solid blue;
+}

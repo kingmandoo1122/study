@@ -1,0 +1,78 @@
+.box{
+    width: 200px;
+    height: 200px;
+    border:1px solid #000;
+
+}
+@keyframes move_left_to_right {
+    0%{
+        transform: translateX(0px) ;
+    }
+    50%{
+        background: red;
+    }
+    100%{
+        transform: translateX(500px)rotate(180deg);
+    }
+}
+
+.box1{
+    /* animation-name: move_left_to_right; */
+    /* animation-duration: 4s; */
+    /* animation-timing-function: ease; */
+    /* animation-delay: 0s; */
+    /* animation-iteration-count:infinite ; */
+    /* animation-direction: alternate; */
+    /* animation-fill-mode: forwards; */
+
+    animation: move_left_to_right 4s linear 0s 1 alternate forwards;
+}
+
+
+@keyframes animation_rotate {
+    0%{transform:rotate(0deg);
+    }
+
+    100%{transform: rotate(360deg);
+    }
+}
+.box2{
+    position: fixed;
+    top:-200px;
+    left:calc(50% - 200px);
+    width:400px;
+    height:400px;
+    animation:animation_rotate 5s linear 0s infinite;
+    border-radius: 50%;
+    border:10px dotted #000;
+}
+.box2:hover{
+    animation: none;
+}
+
+
+@keyframes move_around {
+
+    0%{transform: translate(0);
+    }
+    25%{
+        transform: translate(100%,0%)
+    }
+    50%{
+        transform:translate(100%,100%)
+    }
+    75%{
+        transform: translate(0%,100%)
+    }
+    100%{
+        transform: translate(0%,0%)
+    }
+    
+}
+
+.box3{
+    color:blue;
+    margin: 300px auto;
+    animation: move_around 2s linear 0s infinite;
+
+}

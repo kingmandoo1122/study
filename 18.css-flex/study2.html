@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-item</title>
+    <link rel="stylesheet" href="./css/study2.css">
+</head>
+<body>
+    <h1>플렉스 아이템 전용 속성들</h1>
+    <p>플렉스 아이템들은 유연성이 있다.</p>
+    <p>포함하는 컨텐츠만큼의 너비를 혹은 높이를 유지하기위해 너비높이를 늘리거나 줄인다.</p>
+    <ul>
+        <li>
+            <h2>flex-basis</h2>
+            <p>width처럼 아이템의 가로사이즈를 지정할 수 있다. 기본값은 auto이다.</p>
+            <p>플렉스아이템들이 점유하는 기본크기를 설정</p>
+        </li>
+        <li>
+            <h2>flex-shrink</h2>
+            <p>아이템의 크기가 줄어드는 비율</p>
+            <p>플렉스 컨테이너의 너비가 줄어들어서 아이템들에게 설정된 너비보다 작아져야 할 때, 줄어드는 비율을 말한다.(기본값:1)-아이템들의 줄바꿈이 허용되지 않는 상황에서 유효하다.</p>
+            <p>기본값은 1이며 컨테이너 공간이 줄어들면 아이템들의 너비가 같이 같은 비율로 줄어든다.</p>
+        </li>
+        <li>
+            <h2>flex-grow</h2>
+            <p>플렉스 컨테이너의 공간이 여유가 있어서 남아돌 때, 남은 공간을 아이템들이 나눠갖는 비율(아이템은 커지겠다).</p>
+            <p>기본값은 0이며 남은 공간이 있어도 아이템의 크기는 커지려고 하지 않는다.</p>
+        </li>
+        <li>
+            <h2>order</h2>
+            <p>아이템의 순서를 바꿀 때 사용</p>
+            <p>순서가 낮을수록 start지점</p>
+        </li>
+        <li>
+            <h2>align-self</h2>
+            <p>아이템의 수직축(교차축) 정렬</p>
+            <p>flex-start/flex-end/center</p>
+        </li>
+    </ul>
+
+    <hr>
+
+    <div class="box">
+        <div>div1</div>
+        <div>div2222</div>
+        <div>div3333333</div>
+        <div>div444444444444</div>
+    </div>
+
+    <div class="box2">
+        <div>div1</div>
+        <div>div2222</div>
+        <div>div3333333</div>
+        <div>div444444444444</div>
+    </div>
+
+    <div class="box3">
+        <section>s1</section>
+        <section>s2</section>
+        <section>s3</section>
+        <section>s4</section>
+    </div>
+</body> 
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/study1.css">
+    <title>flex</title>
+</head>
+<body>
+    <h1>레이아웃(배치)방법 - flex</h1>
+    <p>블록레벨태그들을 좌우로 나란히 배치하는 방법으로 flex방법을 배워보자</p>
+    <p>플렉스바스는 크게 부모태그(플렉스컨테이너) 자식태그(플렉스아이템) 두 부분으로 나뉘며 각각의 부분마다 사용할 수 있는 css 속성이 다르다.</p>
+    <p>플렉스 아이템들은 플렉스 컨테이너의 자식태그들을 말하며, 기본적으로는 플렉스 컨테이너 안에서 메인축을 따라서 나란히 배치되는 특징을 갖는다.</p>
+    <p>교차축은 메인축의 방향에 따라서 자동으로 바뀐다.</p>
+
+    <h2>flex-container(대장)에 지정하는 속성</h2>
+
+    <ul>
+        <li>
+            <p>display:flex -> 이 속성이 적용된 태그가 플렉스 컨테이너(대장)가 된다.</p>
+            <p>flet-container가 된 태그는 좌에서 우 방향으로(row)방향으로 메인축이 형성되고, 위에서 아래 방향으로(column방향)교차축이 형성된다.</p>
+            <p>메인축과 교차축의 시작지점과 마지막지점은 각각 flex-start지점 flex-end지점이라 부른다.</p>
+            <p>컨테이너의 자식들인 아이템들은 무조건 메인축을 따라서 나란히 배치가 된다.</p>
+        </li>
+
+
+        <li>
+            <p>flex-direction -> 메인축의 방향을 바꾸어주는 속성</p>
+            <ul>
+                <li>row(기본값) - 좌 -> 우</li>
+                <li>row-reverse - 우 -> 좌</li>
+                <li>column - 위 -> 아래</li>
+                <li>column-reverse - 아래 -> 위</li>
+            </ul>
+            <p>플렉스 아이템들은 무조건 메인축의 시작지점부터 나란히 배치된다.</p>
+        </li>
+
+
+        <li><p>justify-content - 메인축을 따라 아이템을 정렬하는 방법</p>
+            <ul>
+                <li>flex-start(기본값) - 아이템들은 메인축의 시작지점에 정렬</li>
+                <li>flex-end - 메인축의 마지막지점에 정렬</li>
+                <li>center- 메인축의 중앙지점에 아이템 정렬</li>
+                <li>space-between - 메인축의 시작과 마지막 지점에 아이템을 맞춘 후 아이템들의 사이여백을 동일하게 지정하도록 정렬</li>
+                <li>space-around - 각 아이템들의 좌우 여백을 동일하게 지정하여 정렬</li>
+            </ul>
+        </li>
+
+
+        <li>
+            <p>align-items - 교차축을 따라 아이템을 정렬하는 방법</p>
+            <ul>
+                <li>stretch(기본값) - 교차축 길이만큼 아이템길이를 늘림</li>
+                <li>flex-start - 교차축의 시작지점에 아이템 정렬</li>
+                <li>flex-end - 교차축의 마지막지점에 아이템 정렬</li>
+                <li>center - 교차축의 중앙지점에 아이템 정렬</li>
+            </ul>
+        </li>
+        
+        <li>
+            <p>flex-wrap - flex-item들의 줄바꿈을 설정하는 속성</p>
+            <p>기본값은 nowrap 줄바꿈을 허용하지 않는다</p>
+            <p>wrap - 아이템들의 줄바꿈 허용</p>
+        </li>
+
+        <li>
+            <p>align-content 에서 아이템들의 줄바꿈을 허용했을 때 container전체높이를 수직축으로하여 아이템그룹 전체를 정렬할 때 사용하는 속성</p>
+        </li>
+
+    </ul>
+    <div class="box">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+        <div>box4 Lorem ipsum dolor sit </div>
+    </div>
+
+    <div class="container1">
+        <section>s1</section>
+        <section>s2</section>
+        <section>s3</section>
+        <section>s4</section>
+    </div>
+
+    <div class="container2">
+        <section>s1</section>
+        <section>s2</section>
+        <section>s3</section>
+        <section>s4</section>
+    </div>
+
+    <div class="container3">
+        <section>s1</section>
+        <section>s2</section>
+        <section>s3</section>
+        <section>s4</section>
+    </div>
+
+    <div class="container4">
+        <section>s1</section>
+        <section>s2</section>
+        <section>s3</section>
+        <section>s4</section>
+    </div>
+
+</body>
+</html>

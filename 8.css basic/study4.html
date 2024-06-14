@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자의 우선순위 점수</title>
+    <link rel="stylesheet" href="../style/common.css">
+    <link rel="stylesheet" href="./css/study4.css">
+</head>
+<body>
+    <h1>선택자의 우선순위 점수</h1>
+    <p>태그를 선택하는 선택자는 우선순위 점수라는 개념이 있으며, 이 우선순위 점수가 높을수록 최종 스타일로 반명된다.</p>
+    <ul>
+        <li>태그명으로 선택 - 우선순위 1점</li>
+        <li>클래스명으로 선택 - 우선순위 10점</li>
+        <li>아이디명으로 선택 - 우선순위 100점</li>
+        <li>인라인스타일방식 - 우선순위 1000점</li>
+        <li>!important - 무조건 적용</li>
+    </ul>
+    <p class="a b" id="cc"
+    style="color: brown;">선택자의 우선수위 점수는 합산된다.</p>
+    <div class="box">
+        <p class="desc haha">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae mollitia quia molestias. Eius dolorum ipsum libero odio assumenda numquam perferendis neque ipsam aperiam? Voluptatem tenetur animi officia quod voluptas provident!</p>
+    </div>
+</body>
+</html>

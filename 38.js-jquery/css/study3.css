@@ -1,0 +1,36 @@
+*{margin:0;padding:0}
+ul{
+    list-style:none;
+}
+.banner{
+    width: 0px;
+    transition:all 1s ease 0s;
+    overflow: hidden;
+    height: 120px;
+}
+
+.banner.on{
+    width: 400px;
+}
+.wrap{
+    display: flex;
+}
+.btncls{
+    display: flex;
+    flex-direction: column;
+
+}
+.btncls>button{
+    flex:1;
+    
+}
+
+.btnopen{
+    width: 50px;
+}
+.btnclose{
+    width: 50px;
+}
+.btntoggle{
+    width: 50px;
+}

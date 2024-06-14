@@ -1,0 +1,43 @@
+.box p{
+    color:violet
+}
+/* box class 안에 포함되어있는 자손p태그들을 선택 */
+
+.box>p{color:blue;}
+/* box 클래스 안에 포함되어있는 자식p태그를 선택 */
+/* .box>ul>li{}
+.box>li{} */
+.first_ptag~p{text-decoration: underline;color: red;}
+/* +,~는 형제들만 사용 가능 */
+/* +는 바로다음형제태그 1개 */
+.first_ptag+p{text-decoration: line-through;}
+/* 다음 형제태그들 여러개 */
+p:nth-of-type(1){border:5px dotted blue}
+/* 같은 p태그 중에서 첫번째 자식 */
+
+/* p:nth-child(1){border:5px dotted blue} */
+/* nth-child()는 첫번째 자식이면서 p 태그 */
+
+#list>li:nth-of-type(2n+1){background-color: blue;}
+/* 괄호 안에는 숫자 말고 n을 사용하여 수식을 입력할 수도 있다. */
+
+[for]{
+    color: blue;
+}
+/* for라는 속성이 있는 태그를 선택 */
+
+[for="user_name"]{
+    font-weight: bold;
+}
+/* for라는 속성에 user_name이라는 속성값이 들어가는 태그를 선택 */
+
+label[for="user_name"]{
+    font-style: italic;
+}
+/* for라는 속성에 user_name이라는 속성값이 들어가고 태그명까지 label 태그인 태그들을 선택 */
+
+[checked]+label{
+    text-decoration: underline;
+    color: red;
+}
+/* checked라는 속성이 있는 태그들의 다음형제 label태그 하나를 선택 */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리연산자</title>
+</head>
+<body>
+    <h1>and 연산자 &&</h1>
+    <p>&& 연산문자는 '그리고'라고 해석을 하며 전체경우가 true일 때만 true로 계산을 하고 한 경우라도 false라면 전체를 false로 계산한다.</p>
+    <script>
+        document.write(5>3 && 4>2)
+        document.write(5<3 && 2>4)
+        5>2 && 10<22 && 20>2 && 43>2 // 모두 true 이기 때문에 true
+        let a = 20 && 4 && 0 && 12
+        console.log(a)
+    </script>
+    <h1>or연산자 || </h1>
+    <p>또는 연산자는 좌우로 둘다 false 일 때만 전체를 false로 계산</p>
+    <p>여러 경우 중 하나라도 true 라면 전체를 true 로 계산</p>
+    <script>
+        5>3 || 10>2 // ture
+        5>2 || 3>1 || 10>1 || 4>1 // true
+        1>2 || 1>5 || 2>6 // false
+        let b = 0 || "" || undefined || 3 
+        console.log(b)
+    </script>
+
+    <h3>quiz</h3>
+    <p>사용자에게 아이디와 비밀번호를 물어보고 정상적으로 입력했다면 알림창으로 환영합니다 라고 나오게 하고 그렇지 않다면 [계정 정보가 올바르지 않습니다.]
+    아이디 : "green"
+    비밀번호 : 1234
+    </p>
+
+    <script>
+        let user_id = prompt("당신의 아이디를 입력해 주세요.")
+        let user_pw = prompt("당신의 비밀번호를 입력해 주세요.")
+
+        let user1_id = "green"
+        let user1_pw = "1234"
+
+        let result = user_id === user1_id && user_pw === user1_pw ? "[환영합니다!]":"[계정 정보가 올바르지 않습니다]"
+        alert(result)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 웹폰트는 폰트파일이 웹상에 저장되어있는 것이므로 상대경로가 아닌 절대경로로 폰트파일이 연결되어 있다. */
+.f_suite{
+    font-family: 'SUITE-Regular';
+}
+
+
+.noto-sans{
+  font-family: "Noto Sans KR";
+}
+
+.single-day-regular {
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .nanum-gothic-regular {
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+
+
+  /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+
+
+
+
+
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+/* .noto-sans kr-<uniquifier> {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+/* .noto-sans kr-<uniquifier> {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* 
+
+.nanum-pen script-regular {
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+   */
+
+/* 구글 폰트는 선택한 폰트들을 한번에 등록할 수 있도록 link태그를 제공하고 있으나 선택한 폰트들을 등록하고 있는 link태그들 복사하여 html태그의 head태그에 넣어 등록할 수 있도록 한다. */

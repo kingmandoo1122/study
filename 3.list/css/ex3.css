@@ -1,0 +1,42 @@
+html{
+    font-size:13.6px;
+}
+body{
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+p{
+    font-size: 10px;
+}
+h3{
+    font-weight:600;
+}
+
+.wrap{
+    margin: 0 auto;
+    width: 1080px;
+    display: flex;
+}
+
+/* .wrap>li{
+    width:calc((100% - 16px*3)/4);
+} */
+
+
+.wrap>li{
+    flex:1;
+    margin-right:16px;
+}
+
+.wrap>li:last-of-type{
+    margin-right: 0;
+}
+
+.wrap img{
+    width:100%;
+}
+
+.wrap p{
+    margin:16px 0;
+    color:rgba(0, 0, 0, 0.8)
+}

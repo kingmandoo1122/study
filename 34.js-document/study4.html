@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+    <link rel="stylesheet" href="./css/study4.css">
+</head>
+<body>
+    <h1>이벤트</h1>
+    <p>브라우저에서 사용자가 행하는 모든 행동을 자바스크립트는 이벤트로 인식한다.</p>
+    <p>대표적인 이벤트 - 마우스 클릭, 마우스 움직임 등...</p>
+    <!-- <span class="button" onclick="alert('클릭했군요')" onmouseover="alert('마우스를 올렸군요')" onmouseout="alert('마우스를 내렸군요')" >button</span> -->
+    <script>
+
+    </script>   
+    <div class="state">0</div>
+    <span class="button btn_up">up</span>
+    <span class="button btn_down">down</span>
+    <span class="button btn_reset">reset</span>
+    <div class="circle"> 원 </div>
+    <script>
+        let button = document.querySelector(".button")
+        let btn_up = document.querySelector(".btn_up")
+        let num = 0
+        let state = document.querySelector(".state")
+        let btn_down = document.querySelector(".btn_down")
+        let btn_reset = document.querySelector(".btn_reset")
+        let circle = document.querySelector(".circle")
+        btn_up.addEventListener("click",function(){
+            num ++
+            state.innerHTML = num
+            circle.style.transform = `rotate(${10*num}deg)`
+        })
+        btn_down.addEventListener("click",function(){
+            num --
+            state.innerHTML = num 
+            circle.style.transform = `rotate(${10*num}deg)`
+        })
+        btn_reset.addEventListener("click",function(){
+            num = 0
+            state.innerHTML = num
+        })
+        // button.addEventListener("click",function(){
+        //     circle.style.transform = "rotate(180deg)"
+        // })
+    </script>
+</body>
+</html>

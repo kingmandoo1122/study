@@ -1,0 +1,185 @@
+html{
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+input{
+    font-family: "Noto Sans KR", sans-serif;
+    outline: none;
+
+}
+
+body{
+    padding-top: 30px;
+    background: #252525;
+}
+.wrap{
+    box-sizing: border-box;
+    padding: 57px 35px 30px;
+    width: 550px;
+    margin: 0 auto;
+    background: #252525;
+    color: #a5a5a5;
+}
+
+label{
+    display: none;
+}
+
+.password{
+    display: flex;
+    align-items: center;
+    background: #2f2f2f;
+    border-radius: 5px;;
+    width: 480px;
+
+}
+
+.password span{
+    margin-right: 20px;
+    color: white;
+}
+
+.wrap>h1{
+font-size:28px;
+margin-bottom: 25px;
+}
+.wrap>h1>b{
+    color:white;
+}
+
+fieldset{border:none}
+
+#user_email,#user_pw{
+    box-sizing: border-box;
+    padding-left:22px;
+    height: 53px;
+    width: 480px;
+    background: #2f2f2f;
+    border-radius: 5px;
+    border: 1px solid #2f2f2f;
+    color: white;
+}
+
+/* .wrap form input::placeholder{
+    color:red;
+}
+
+.wrap form input[type="submit"]{
+    border:1px solid lime;
+} */
+
+
+fieldset p{margin-bottom:30px ;}
+
+#sign_up{
+    font-size:15px;
+    background: #717171;
+    width: 480px;
+    height: 60px;
+    color: white;
+    border-radius: 30px;
+    border:1px solid #717171;
+}
+#sign_up:active{
+    background: #515151;
+    border:1px solid #515151;
+    color:rgb(206, 206, 206);
+}
+
+
+.sns{
+    margin-top: 50px;
+    text-align: center;
+
+}
+.sns>.line>p:nth-of-type(1){
+    margin-bottom:42px;
+    /* line-height: 0%; */
+}
+
+.sns_link{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+ul>li{
+    margin-right: 16px;
+    width:60px;
+    height: 60px;
+}
+
+
+ul>li:last-of-type{
+    margin-right: 0px;
+}
+
+.sns_link a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.kakao{
+    background: #ffef05;
+    border-radius: 100px;
+}
+.tworld{
+    background: #3617cd;
+    border-radius: 100px;
+}
+.naver{
+    background: #20bb05;
+    border-radius: 100px;
+}
+.facebook{
+    background: #3c579a;
+    border-radius: 100px;
+}
+.apple{
+    background: #fefefe;
+    border-radius: 100px;
+}
+
+
+.sns>p:nth-of-type(2){
+    margin-bottom:32px;
+}
+
+/* .line{
+    display: flex;
+    justify-content: space-between
+}
+
+.line1{
+    width: 120px;
+    border-top: 1px solid #2f2f2f;
+} */
+.pt14{
+    margin-top: 16px;
+    padding-left:24px;
+    font-size:14px;
+    background: url("../1234img/icon-gray.png") no-repeat 0 0 ;
+}
+
+
+.foot{
+    text-align: left;
+    font-size:13px;
+}
+.foot p:nth-of-type(2){
+    padding-left: 10px;
+}
+
+
+.line p{
+    background:  url("../1234img/Layer\ 2.png") repeat-x 0 50%;
+}
+
+.line b{
+    background: #252525;
+    padding:0 5px;
+}

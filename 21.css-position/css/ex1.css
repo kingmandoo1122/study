@@ -1,0 +1,36 @@
+*{margin: 0; padding: 0;}
+.tabmenu{
+    border:1px solid red;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+.tabmenu>dt{
+    border: 1px solid blue;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.tabmenu>dt.on{
+    /* 활성화스타일 */
+    background:black;
+    color:white;
+}
+.tabmenu>dd{
+    border: 1px solid green;
+    position: absolute;
+    top:50px;
+    left:0;
+    width: 100%;
+    height: 150px;
+    display: none;
+}
+.tabmenu>dt.on+dd{
+    display:block;
+}
+
+

@@ -1,0 +1,83 @@
+ul{
+    list-style: none;;
+}
+.class_list{
+    margin-top:300px;
+    display: flex;
+    flex-wrap: wrap;
+    padding:0;
+    justify-content: space-between;
+}
+.class_list>li{
+    width: calc((100% - 20px)/3);
+    border:1px solid black;
+    padding:10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    animation: exist 3s ease 0s;
+}
+
+.class_list>li:nth-of-type(1){
+    position: absolute;
+    top:50px;
+    left:calc(50% - (((100% - 20px)/3)/2));
+    animation: ani_mation 1.5s ease 0s;
+
+}
+.class_list>li>h3::after{
+    content: "(학생)";
+    margin-left: 10px;
+}
+.class_list>li:nth-of-type(1)>h3::after{
+    content: "(선생님)";
+    margin-left:10px;
+}
+.class_list>li:nth-of-type(1)>h3{
+    animation:flash 1s linear 0s infinite;
+}
+
+
+.class_list>li>ul{
+    padding:0;
+    display: flex;
+}
+
+
+.class_list>li>ul::before{
+    content: "좋아하는 과일 : ";
+    margin-right: 5px;
+}
+
+.class_list>li>ul>li:after{
+    content: ", ";
+}
+.class_list>li>ul>li:last-of-type::after{
+    content: none;
+}
+
+
+@keyframes ani_mation {
+
+    0%{transform: translateY(-20%);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes exist{
+    0%{opacity: 0};
+
+    50%{opacity:0};
+
+    100%{opacity: 1;}
+}
+
+@keyframes flash{
+    0%{color:red};
+    50%{color:rgb(216, 255, 74)};
+    100%{color:rgb(92, 25, 168)};
+}
+

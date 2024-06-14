@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>참거짓데이터 - boolean</title>
+</head>
+<body>
+    <h1>boolean 데이터</h1>
+    <p>값이 두개 밖에 없다. true/false</p>
+    <h2>비교를 통하여 참거짓이 계산된다.</h2>
+    <p>크다,작다,같다,같지않다와 같은 비교를 통하여 참거짓이 계산된다.</p>
+    <p>!는 자바스크립트에서 부정의 의미(not)으로 해석된다.</p>
+
+    <script>
+        true
+        false
+        console.log(10>7)
+
+        -2 > -10 //true
+        -100 > -10 // false
+        10 == 10 // true
+        10 === 10 // 데이터형태까지 완벽하게 같다 true
+        "10" === 10 //  false
+        10 != 9 // true
+        10 !== "10" // true
+        9 >= 5 // 9가 5보다 크거나 같다 
+        8 <= 10 // 8이 10보다 작거나 같다
+
+        console.log(!(!(10>2))) //true
+    </script>
+
+    <h1>있으면 true 없으면 false</h1>
+    <h3>false로 간주되는 경우</h3>
+    <ul>
+        <li>숫자데이터인데 값이 0인 경우</li>
+        <li>문자데이터인데 내용이없는 빈 문자인 경우</li>
+        <li>변수를 선언했는데 변수 안에 아무 값도 저장되지 않은 경우</li>
+        <li>undefined값은 false로 간주한다</li>
+        <li>null 값은 false로 간주한다.</li>
+    </ul>   
+    <script>
+        0 // false로 간주된다.
+        -190 // true로 간주된다.
+        !-190 // false로 간주
+        "" // false 로 간주
+        !"" // true 로 간주
+        "text" // true로 간주
+        !"text" // false로 간주
+        !!!"text" // false로 간주
+        let abc = null
+        abc // false로 간주
+        undefined
+        alert(abc)
+    </script>
+    <h1>계산표현</h1>
+    <p>자바스크립트에서는 특수한 계산표현이 있다.</p>
+    <script>
+        let num1 = 10
+        num1 = num1 + 5
+        console.log(num1)
+
+        let num2 = 20
+        num2 += 10
+        console.log(num2)
+    
+        let num3 = 30
+        num3 = num3 - 10
+        console.log(num3)
+
+        let num4 = 30
+        num4 -= 10
+        console.log(num4)
+        
+        let num5 = 10
+        num5 = num5*2
+        console.log(num5)
+
+        let num6 = 10
+        num6 *= 2;
+        console.log(num6)
+        
+        let num7 = 10
+        num7 = num7/2
+        console.log(num7)
+
+        let num8 = 10
+        num8 /= 2
+        console.log(num8)
+
+        let num9 = 10
+        num9++ // 1을 더한다
+        num9++
+        console.log(num9)
+
+        let num10 = 10
+        num10-- // 1을 뺀다
+        num10--
+        num10--
+    </script>
+    
+</body>
+</html>

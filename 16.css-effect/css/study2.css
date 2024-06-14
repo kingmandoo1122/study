@@ -1,0 +1,39 @@
+.box1{
+    border:1px solid black;
+    width:300px;
+    height: 300px;
+    margin:0 auto;
+    box-shadow: 0 0 0 white;
+    border-radius: 30px;
+    transition:all 1s linear 0s;
+}
+
+.box1:hover{
+    box-shadow: -20px 20px 10px blue;
+}
+
+.box2{
+    border:1px solid black;
+    margin:50px auto;
+    width: 300px;
+    height:300px;
+    box-shadow:inset 20px 20px 3px red;;
+}
+.box3{
+    border:1px solid black;
+    margin:50px auto;
+    width: 300px;
+    height:300px;
+    box-shadow: 0 0 0 red,
+    0 0 0 blue,
+    0 0 0 green;
+    transition: all 2s ease 0s;
+}
+
+.box3:hover{
+    box-shadow:
+    20px 20px 0 red,
+    -20px -20px 0 blue,
+    40px -40px 0 green,
+    -40px 40px 0 black;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서 객체 편집</title>
+    <style>
+        .box{
+            width: 100px;
+            height:150px;
+            background:#ededed;
+            color: #888;
+        }
+        .box.on{
+            background: red;
+            color:white
+        }
+    </style>
+</head>
+<body>
+    <h1>태그의 속성 편집하기</h1>
+    <p>태그가 갖고있는 속성값을 설정하거나 가져올 수 있다.</p>
+    <img src="./img/bird.png" alt="새사진1" class="img_frame">
+    <script>
+        let imgtag = document.querySelector("img.img_frame")
+        let imgsrc = imgtag.getAttribute("src")
+        console.log(imgsrc)
+        let imgalt = imgtag.getAttribute("alt")
+        console.log(imgalt)
+        let imgclass = imgtag.getAttribute("class")
+        console.log(imgclass)
+
+
+        imgtag.addEventListener("mouseover",function(){
+            imgtag.setAttribute("src","./img/dog.jpg")
+            imgtag.setAttribute("alt","강아지사진1")
+        })
+
+        imgtag.addEventListener("mouseout",function(){
+            imgtag.setAttribute("src","./img/bird.png")
+            imgtag.setAttribute("alt","새사진1")
+        })
+    </script>
+    <h1>태그의 컨텐츠 편집하기</h1>
+    <p>태그의 컨텐츠를 다른 값으로 편집할 수 있다.</p>
+    <p class="par">클릭해봐</p>
+    <script>
+        let par = document.querySelector(".par")
+        console.log(par.textContent)
+        // par.innerText = "새로운 내용"
+        // par.innerHTML ="<i>새로운 내용</i>"
+        par.addEventListener("click",function(){
+            par.innerHTML ="<i>클릭했네</i>"
+        })
+    </script>
+    <div class="box">
+        비활성박스
+    </div>
+    <script>
+        let box_tag = document.querySelector(".box")
+        let box_state = false
+        // 토글기능은 상태를 나타내는 변수를설정해 두어야 함.
+        box_tag.addEventListener("click",function(){
+            if(box_state == false){
+                box_tag.classList.add("on")
+                box_tag.innerHTML = "활성"
+                box_state = true
+            }else{
+                box_tag.classList.remove("on")
+                box_tag.innerHTML = "비활성"
+                box_state = false
+            }
+        })
+        
+    </script>
+</body>
+</html>

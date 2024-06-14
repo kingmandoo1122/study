@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델</title>
+    <link rel="stylesheet" href="css/study1.css">
+</head>
+<body>
+    <h1>box-model</h1>
+    <p>태그가 갖는 자세한 구조를 알아보자.</p>
+
+    <h2>박스모델의 4요소</h2>
+    <ul>
+        <li>컨텐츠박스 -content box</li>
+        <li>테두리 - border</li>
+        <li>테두리 기준 바깥 여백 - margin</li>
+        <li>테두리 기준 안쪽 여백 - padding</li>
+    </ul>
+    <h2>컨텐츠 박스 -> content-box</h2>
+    <p>글자나 이미지 영상 등 컨텐츠와 자식태그가 놓여지는 공간</p>
+    <p>box-sizing:contex-box (기본값) 일 떄 컨텐츠 박스의 크기는 width/height로 조절할 수 있다.</p>
+    <p>기본적으로 px 단위를 사용한다.그리고 %단위를 사용할 수 도있다.</p>
+    <p>box-sizing:border-box 로 설정한다면 태그가 갖는 테두리 굵기까지 포함해서 설정한 너비(width)로 태그의 크기가 조절된다.</p>
+
+    <h2>margin</h2>
+    <p>margin은 테두리 기준 바깥쪽 여백이다.</p>
+    <p>만들어진 바깥쪽 여백만큼 근접해있는 형제태그를 밀어낸다.</p>
+    <p>밀어내지 못하는 상황이라면 선택된 본인이 밀린다.</p>
+    
+    <h2>padding</h2>
+    <p>padding은 테두리 기준 안쪽 여백이다.</p>
+    <p>만들어진 안쪽 여백만큼 테두리에서부터 컨텐츠박스를 밀어낸다.</p>
+
+    <h2>border</h2>
+    <p>테두리에 그릴 수 있는 경계선이다.</p>
+    <p>태그가 위에서부터 거꾸로 쌓일 때 경계선을 기준으로 쌓이게 된다.</p>
+
+    <p>margin/padding/border는 top/right/bottom/left 4가지 방향으로 각각 따로 지정할 수 있다.</p>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi corporis quis temporibus quae eos nostrum voluptatibus assumenda sapiente hic ullam, voluptatem accusantium accusamus saepe nemo, molestias repudiandae? Doloremque, reiciendis.
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam repellat qui officia, adipisci vel ut quod repellendus ab iure dolores aliquid corporis totam sit in esse neque excepturi veniam.</p>
+
+    <div class="quizbox">
+        <section>
+            title
+        </section>
+    </div>
+
+    <div class="boxing">
+        <section>
+            hello
+        </section>
+    </div>
+</body>
+</html>

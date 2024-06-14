@@ -1,0 +1,94 @@
+*{margin:0;padding:0}
+body{margin-bottom: 500px;;}
+.box{
+    margin:0 auto;
+    border:10px solid black;
+    width:1000px;
+    height:800px;
+    display: flex;
+    /* flex-direction: column-reverse; */
+    justify-content:center;
+    /* align-items:start; */
+    flex-wrap:wrap;
+    /* align-content: start; */
+}
+
+.box>div{
+    border: 1px solid red;
+}
+
+.container1{
+    margin:0 auto;
+    border:1px solid black;
+    width:900px;
+    display: flex;
+}
+
+.container1>section{
+    border:1px solid red;
+    height:100px;
+    width:25%;
+}
+
+.container2{
+    border:1px solid black;
+    margin: 50px auto;
+    width:900px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.container2>section{
+    border:1px solid red;
+    height:100px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.container3{
+    margin:0 auto;
+    border:1px solid black;
+    width:900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container3>section{
+    border:1px solid red;
+    height:100px;
+    width:calc((100% - 30px)/4);
+    /* +-를 쓸땐 항상 띄어쓰기를 한다. */
+    box-sizing: border-box;
+}
+
+.container4{
+    border:1px solid black;
+    width: 900px;
+    margin:50px auto;
+    display: flex;
+    flex-wrap: wrap ;
+    padding:10px
+}
+
+.container4>section{
+    box-sizing: border-box;
+    border:1px solid red;
+    width: calc(50% - 5px);
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.container4>section:nth-of-type(2n-1){
+    margin-right: 10px;
+}
+
+/* .container4>section:nth-of-type(1), .container4>section:nth-of-type(2){
+    margin-bottom: 10px;
+} */
+
+.container4>section:nth-last-of-type(1), .container4>section:nth-last-of-type(2){
+    margin-bottom: 0;
+}
+/* 섹션들에게 모두 마진을 주고, 마지막 번째의 태그를 마진을 0으로 설정해야
+html코드가 어떻게 변경되어도 항상 같은 모양을 유지보수할 수 있다. */

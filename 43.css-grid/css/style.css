@@ -1,0 +1,31 @@
+*{margin:0; padding:0;}
+
+.box{
+    border:1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 960px;
+    gap: 10px;
+    column-gap: 20px;
+    grid-auto-rows: minmax(50px,auto);
+}
+
+.box>div{
+    border:1px solid blue;
+}
+
+.box>div:nth-of-type(1){
+    background: coral;
+    /* grid-column-start : 1
+    grid-column-end : 4
+    */
+    grid-column: 1/4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box>div:nth-of-type(9){
+    background: lightblue;
+    grid-column: 2/4;
+    grid-row: 4/6 ;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>값으로서 사용되는 함수</title>
+</head>
+<body>
+    <h1>함수정의의 또 다른 표현</h1>
+    <p>변수를 먼저 선언한 후 변수에 이름없는 익명함수를 저장하여 함수를 정의할 수 있다.</p>
+    <p>변수를 선언하여 익명함수를 저장하는 함수 정의 방법은 정의부가 최상단으로 끌어올려지는 호이스팅이 되지 않는다.</p>
+    <script>
+
+        let b = 10
+        let a = function(){
+            document.write("하하")
+        }
+        a()
+    </script>+
+    <h1>콜백함수의 사용</h1>
+    <p>callback 함수란 ? 어떤 A라는 함수를 실행했을 때 덩달아서 실행되는 함수를 콜백함수라고 부른다.</p>
+    <script>
+
+        function c(d){
+            d()
+        }
+        c(function(){
+            document.write("안녕!")            
+        })
+
+        let abc = function(){
+            return 90+80+70}
+
+        function showAver(aver){
+            let result = aver()
+            document.write(`평균값은 ${result} 입니다.`)
+        }
+        showAver(abc)
+
+    </script>
+</body>
+</html>

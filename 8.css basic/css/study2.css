@@ -1,0 +1,36 @@
+h2{color:red;background-color: gray;}
+h2{color:blue;color:green}
+/* h2태그들을 선택해서 중괄호 안의 스타일을 적용한다 */
+
+h3{color:violet}
+/* h3태그들을 선택해서 스타일 지정 */
+#title{color:orange;}
+/* id가 title 인 태그를 선택해서 스타일 지정 */
+.subtitle{color:skyblue;}
+/* class가 subtitle인 태그들을 선택해서 스타일 지정 */
+.a{text-decoration:underline}
+.b{font-weight: bold;}
+p .a{}
+/* p태그이면서 a클래스들을 선택 */
+p.b{}
+/* p태그이면서 b클래스들 선택 */
+p.c{}
+/* p태그이면서 c클래스들을 선택 */
+p.a.b{}
+/* p태그이면서 a클래스이면서 b클래스인 태그들을 선택 */
+p.a.b.c{}
+/* p태그이면서 a크래스이면서 b클래스이면서 c클래스인 태그들을 선택 */
+.a.b.c{}
+/* a클래스이면서 b클래스이면서 c클래스인 태그들을 선택 */
+hr.a.b.c{}
+/* hr태그이면서 a,b,c,클래스인 태그 */
+
+h3{}
+
+#title{}
+
+h3#title{}
+
+h3#title.a{}
+
+h3.a#title{}

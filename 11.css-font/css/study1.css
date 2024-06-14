@@ -1,0 +1,79 @@
+.a>p{
+    /* font-size:50px; */
+    font-size:2em; /*96*/
+}
+
+.a{
+    font-size:2em /*48*/
+}
+
+ul{
+    font-size:2rem /*24*/
+}
+
+html{
+    font-size:12px
+}
+
+.b p:nth-of-type(2){
+    font-size:50px;
+    /* line-height: 1.2; */
+
+}
+p.button{
+    border:1px solid black;
+    width: 200px;
+    height: 60px;
+    font-size:12px;
+    text-align: center;
+    line-height: 60px;
+}
+.c{
+    font-weight: bold;
+}
+
+.d p{
+    font-style: italic;
+}
+.d address{
+    font-style: normal;
+}
+
+.e{
+    letter-spacing: 10px;
+}
+.f{
+    word-spacing: 30px;
+}
+.pre{
+    white-space:pre;
+}
+.g p:nth-of-type(2){
+    text-indent:50px
+}
+.h ul li:nth-of-type(1){
+    text-decoration:underline
+}
+.h ul li:nth-of-type(3){
+    text-decoration: line-through;
+}
+.i p:last-of-type{
+    text-align: justify;
+}
+.j p:last-of-type{
+    text-transform: capitalize;
+}
+
+.k p:last-of-type{
+    word-break: keep-all;
+}
+.l p strong{
+    border: 1px solid green;
+    font-size: 5rem;
+}
+
+.l p i{
+
+    border: 1px solid blue;
+    vertical-align:bottom;
+}

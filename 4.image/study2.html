@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비디오태그</title>
+    <link rel="stylesheet" href="../style/common.css">
+</head>
+<body>
+    <h1>video태그</h1>
+    <p>비디오파일을 연결해서 화면에 보여주는 태그</p>
+    <hr>
+    <h2>비디오태그에 사용할 수 있는 속성들</h2>
+    <p>속성들은 석택적으로 사용해야 한다. 예를들어 동영상을 홈페이지의 배경이미지 처럼 사용하고 싶다면, controls 속성은 빼주는게 낫다.
+        왜냐하면 controls 속성이 명시되어 있으면 영상부분을 클릭했을 때 일시정지가 되기 때문이다.</p>
+    <p>비디오태그도 이미지태그나 글자처럼 컨텐츠일뿐 맥락이 있지 않다.</p>
+    <ul>
+        <li>controls -> 비디오제어박스</li>
+        <li>autoplay -> 자동재생</li>
+        <li>muted -> 음소거</li>
+        <li>loop -> 반복재생</li>
+        <li>poster -> 섬네일지정 </li>
+
+    </ul>
+
+    <video src="./video/video1.mp4"  controls muted loop poster="img/bird.png"></video>
+    <p>source 태그를 사용하여 여러가지 타입의 영상</p>
+    <video autoplay muted loop>
+        <source src="./video/video.mp4" type="video/mp4">
+        <source src="./video/video.webm" type="video/webm">
+    </video>
+</body>
+</html>

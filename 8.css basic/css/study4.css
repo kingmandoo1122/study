@@ -1,0 +1,14 @@
+#cc{color:rgb(189, 186, 38)}
+p.a.b{color:skyblue}
+p.a{color:violet}
+.a{color: green;}
+.a{color:purple}
+p{color:red;}
+p{color:blue}
+
+
+.desc{color:darkgrey}
+p.desc{color:blue}
+div p.desc{color:brown}
+.box p.desc{color:black}
+div.box>p.desc{color:red}

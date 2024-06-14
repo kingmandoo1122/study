@@ -1,0 +1,68 @@
+.filter1 img{
+    filter:grayscale(1);
+    transition: all 2s ease 0s;
+
+    /* 0~1로 갈수록 회색계통으로 변함 */
+}
+
+.filter1 img:hover{
+    filter:grayscale(0)
+}
+
+.filter2 img{
+    filter: brightness(20%);
+    transition: all 1s ease 0s;
+    width: 640px;
+    /* 기본밝기 100%를 기준으로 했을 때 20%만큼의 밝기로 변함 */
+}
+
+.filter2 img:hover{
+    filter:brightness(1);
+    width: 700px;
+}
+
+.filter3 img{
+    filter: blur(10px);
+    transition: all 2s ease 0s;
+    /* 블러의 수치가 0이 기본이고 높아질수록 더 부드럽게 변함 */
+}
+
+.filter3 img:hover{
+    filter : blur(0)
+}
+
+.filter4 img{
+    filter: hue-rotate(30deg);
+    transition: all 2s ease 0s;
+    /* 원본색상에서 30도만큼 회전한 색상으로 변함 */
+}
+
+
+.filter4 img:hover{
+    filter:hue-rotate(0)
+}
+
+.filter5{
+    width: 500px;
+    height:500px;
+    background: url(../img/커피.jpg) no-repeat 50% 50% / cover;
+}
+.filter5 h1{
+    width: 50%;
+    border:1px solid lime;
+    height:100px;
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    transition: 
+    width 1s ease 0s,
+    height 1s ease 1s,
+    border-radius 1s ease 2s;
+
+    /* backdrop-filter는 선택한 태그의 뒷쪽면에 필터를 적용하는 것이다. */
+}
+
+.filter5 h1:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}

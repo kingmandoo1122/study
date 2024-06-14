@@ -1,0 +1,51 @@
+h1{
+    border:1px solid black
+}
+h2{
+    border:1px solid blue;
+    width: 600px;
+    height:300px;
+    display: inline-block;
+}
+ul{
+    border:1px solid red;
+    display: inline-block;
+}
+ul li{
+    border: 1px solid green;
+}
+ul li{
+    display:inline-block;
+    width: 50px;
+    height:50px;
+}
+
+address{
+    border: 1px solid  pink;
+    width: 50%;
+    /* 블록레벨태그의 높이의 기본값은 auto이기때문에 자동으로 늘어났다가 줄어든다. */
+}
+.box1{
+    border: 1px solid  blue; 
+    height : 400px;
+    width: 50%;
+}
+    /* height를 400픽셀로 고정 했기 때문에 높이가 포함하는 컨텐츠만큼 자동으로 늘어나거나 줄어들지 않는다. */
+
+h4{
+    border: 1px solid orange;
+}
+/* 태그들은 테두리를 경계로하여 배치된다. */
+
+h4 i{
+    border:1px solid lime;
+    display: block;
+    height: 100px;
+}
+/* i태그는 display를 블록으로 변경했기 때문에 글자처럼 배치되지 않고 박스 형태가 되었기 때문에 사이즈를 조절할 수 있으며, 늘어난 높이만큼 부모태그의 높이도 증가한다. */
+h4 strong{
+    border:1px solid aqua;
+    display:inline-block;
+    width:100px;
+    height:100px;
+}

@@ -1,0 +1,31 @@
+*{margin:0;padding:0;}
+.box{
+    border:20px solid red;
+    /* width:auto; */
+    padding:20px;
+    box-sizing: border-box;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+
+    background:url("../../14.css-background/image/코알라.jpg") no-repeat 50% 100% / contain;
+
+
+
+
+/* 
+    배경 이미지를 입력
+    무슨 파일을 배경 이미지로?
+    배경이미지 가로세로반복을?
+    배경이미지 어디에 두어야?
+    배경이미지 크기는 어떻게?
+*/
+
+/* 
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: x y;
+    background-size: 30px 50px;
+*/
+}

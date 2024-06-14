@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문의 중첩 예제</title>
+    <style>
+        .dan{
+            width: 100px;
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //반복문의 중첩표현을 사용하여
+        //구구단을 2단부터 9단까지 나타내보시오
+        //각각 단은 ul태그로 마크업이 될 수 있도록 하시오
+        for(let i=2;i<10;i++){
+            document.write(`<ul class="dan">`)
+            for(let j=1;j<10;j++){
+                document.write(`<li>${i}x${j}=${i*j}</li>`)
+            }
+            document.write(`</ul>`)
+        }
+    </script>
+
+</body>
+</html>

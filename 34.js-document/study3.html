@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포함관계를 이용하여 선택하기</title>
+</head>
+<body>
+    <div class="box">
+        <h1 id="title">포함관계를 이용하여 선택하기</h1>
+        <ul class="list">
+            <li>선택한 태그의 부모태그 선택 - 문서객체.parentElement 프로퍼티를 통해서 부모태그에게 접근할 수 있다.</li>
+            <li>선택한태그의 자식태그들 선택 - 문서객체.children 프로퍼티를 통해서 자식태그들에게 접근할 수 있다.(배열형태로 리턴)</li>
+            <li>선택한태그의 다음형제태그 선택 - 문서객체.nextElementSibling 프로퍼티를 통해서 다음태그에게 접근할 수 있다.</li>
+            <li>선택한태그의 이전형제태그 선택 - 문서객체.perviousElementSibling 프로퍼티를 통해서 이전태그에게 접근할 수 있다.</li>
+        </ul>
+    </div>
+    <script>
+        let title = document.querySelector("#title")
+        title.style.color = "blue"
+        let box = title.parentElement
+        box.style.border = "1px solid black"
+        let body = box.parentElement
+        body.style.backgroundColor = "ivory"
+
+        let box_children = box.children
+        box_children[0].style.borderBottom = "1px solid lime"
+        box_children[1].style.backgroundColor = "olive"
+
+        let ul_tag = document.querySelector(".list")
+        let listarray = ul_tag.children
+        listarray[2].previousElementSibling.style.color ="#444"
+        listarray[2].previousElementSibling.style.transform ="scale(0.8)"
+        listarray[2].nextElementSibling.style.transform = "scale(0.8)"
+        listarray[2].nextElementSibling.style.color = "#444"        
+    </script>
+</body>
+</html>
